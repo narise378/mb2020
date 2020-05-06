@@ -1,0 +1,12 @@
+.footer {
+    background-color: $cr-gray;
+    height: 80px;
+
+    &__copy {
+        font-family: $ff-ja;
+        font-size: $fz-xs;
+        color: $cr-white;
+        text-align: center;
+        padding: 33px 0;
+    }
+}

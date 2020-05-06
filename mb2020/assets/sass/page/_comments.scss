@@ -1,0 +1,112 @@
+.comments {
+    padding: 68px 0;
+
+    &__title {
+        @include title();
+    }
+
+    &__text {
+        font-size: $fz-l;
+        font-family: $ff-ja;
+        text-align: center;
+        padding: 42px 0;
+    }
+
+    &__inner {
+        background: url("http://localhost/mb2020_reproduction/wp-content/uploads/2020/04/comment.png")center center/cover no-repeat;
+        position: relative;
+        color: $cr-white;
+        padding: 60px 16px;
+        height: 215px;
+    }
+
+    &__body {
+        width: 50%;
+
+        @include mq-down() {
+            width: 100%;
+        }
+    }
+
+    &__head {
+        font-family: $ff-ja;
+        font-size: $fz-l;
+
+        span {
+            font-weight: bold;
+        }
+
+        @include mq-down(sm) {
+            font-size: $fz-s;
+        }
+    }
+
+    &__prag {
+        font-size: $fz-s;
+        line-height: 20px;
+        padding: 20px 0;
+
+        @include mq-down(sm) {
+            font-size: $fz-xs;
+            padding: 0;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 72%;
+        left: 82%;
+
+        @include mq-down(sm) {
+            top: 90%;
+            left: 60%;
+        }
+    }
+
+    //---  コメントシングルページ  ---//
+    .comments-items {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 18px;
+
+        @include mq-down(sm) {
+            display: block;
+        }
+
+        .comments-item {
+            color: $cr-gray;
+            box-sizing: border-box;
+            padding: 0 15px 15px;
+            margin: 0px auto;
+            min-height: 260px;
+            width: calc(33.3333333% - 60px / 3);
+
+            @include mq-down(sm) {
+                display: block;
+                width: 100%;
+                margin: 30px auto;
+            }
+
+            &__inner {
+                font-family: $ff-ja;
+                text-align: center;
+            }
+
+            &__name {
+                font-size: $fz-l;
+                padding-bottom: 15px;
+            }
+
+            &__role {
+                font-size: $fz-s;
+                padding-bottom: 15px;
+            }
+
+            &__text {
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 120%;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+//ベース
+$layout-max-width: 810px;
+
+.container {
+    position: relative;
+    max-width: $layout-max-width;
+    height: inherit;
+    margin: 0 auto;
+
+    @include mq-down(sm) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @include mq-down() {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+}

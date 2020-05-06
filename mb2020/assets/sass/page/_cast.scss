@@ -1,0 +1,217 @@
+.cast {
+    padding: 30px 0 0 0;
+    position: relative;
+
+    &:before {
+        background-color: #fef9e7;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 76%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+
+        @include mq-down(sm) {
+            height: 90%;
+        }
+    }
+
+    &__title {
+        @include title();
+    }
+
+    .cast-details {
+        display: flex;
+
+        @include mq-down(sm) {
+            display: block;
+        }
+
+        .cast-detail {
+            width: calc(33.3333333% - 60px / 3);
+            margin-right: auto;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            @include mq-down(sm) {
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 24px;
+                text-align: center;
+
+                &:nth-child(3n) {
+                    margin-right: auto;
+                }
+            }
+
+            &__img {
+                margin: 12px;
+
+                @include mq-down(sm) {
+                    width: 69%;
+                    margin: 0 auto;
+                }
+            }
+
+            &__data {
+                margin: 30px;
+                text-align: center;
+            }
+
+            &__role {
+                font-size: 16px;
+                margin-bottom: 13px;
+            }
+
+            &__name {
+                font-family: $ff-ja;
+                font-size: $fz-m;
+                margin-bottom: 13px;
+            }
+
+            &__title {
+                font-size: $fz-xs;
+            }
+        }
+    }
+
+    &__prag {
+        width: 220px;
+        margin: 0 auto;
+
+        @include mq-down() {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font-size: $fz-xs;
+        line-height: 163%;
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+//--- キャストシングルページ ---//
+
+.musician {
+    padding-top: 69px;
+
+    &__title {
+        @include title();
+        padding-bottom: 60px;
+    }
+
+    .cast-musicians {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include mq-down(sm) {
+            display: block;
+        }
+
+        .cast-musician {
+            display: flex;
+            width: calc(50% - 30px / 2);
+            padding: 0;
+            margin: 0 15px 30px 0;
+
+            @include mq-down(sm) {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            &__img {
+                margin-right: 6px;
+            }
+
+            &__prag {
+                padding: 9px;
+            }
+
+            &__role {
+                font-size: $fz-xs;
+                padding-bottom: 6px;
+            }
+
+            &__name {
+                font-size: $fz-m;
+                font-weight: bold;
+                padding-bottom: 6px;
+            }
+
+            &__title {
+                font-size: $fz-xs;
+                padding-bottom: 6px;
+            }
+
+            &__text {
+                font-size: $fz-xs;
+            }
+        }
+    }
+}
+
+.member {
+    padding-top: 30px;
+    position: relative;
+
+    &:before {
+        background-color: #fef9e7;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 98%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__title {
+        @include title();
+    }
+
+    .cast-members {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 20px;
+
+        .cast-member {
+            margin: 10px auto;
+            width: calc(33.3333333% - 60px / 3);
+            padding: 30px;
+            text-align: center;
+            font-family: $ff-ja;
+
+            @include mq-down(sm) {
+                width: 100%;
+            }
+
+            &__role {
+                font-size: $fz-s;
+                padding-bottom: 9px;
+            }
+
+            &__name {
+                font-size: $fz-l;
+                font-weight: bold;
+            }
+
+            &__title {
+                font-size: 10px;
+                padding-top: 9px;
+
+            }
+        }
+    }
+}

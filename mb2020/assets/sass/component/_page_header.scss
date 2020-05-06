@@ -1,0 +1,47 @@
+.page-header {
+    background: url("http://localhost/mb2020_reproduction/wp-content/uploads/2020/04/hero.png")center center/cover no-repeat;
+    color: $cr-white;
+    padding: 60px 16px;
+
+    &__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq-down(sm) {
+            display: block;
+        }
+    }
+
+    &__title {
+        @include mq-down(sm) {
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__date {
+        @include mq-down(sm) {
+            img {
+                width: 50%;
+                margin: 0 auto;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 156%;
+        left: 76%;
+
+        @include mq-down(sm) {
+            top: 130%;
+            left: 60%;
+        }
+
+    }
+}

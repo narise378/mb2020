@@ -1,0 +1,203 @@
+.story {
+    position: relative;
+    color: $cr-white;
+    padding: 60px 16px;
+    height: 410px;
+
+    @include mq-down() {
+        height: 60vh;
+    }
+
+    &::before {
+        background: rgba(0, 0, 0, 0.5);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    &__title {
+        @include title();
+    }
+
+    &__paragraph {
+        float: right;
+        width: 50%;
+        margin: 10px 0 10px 0;
+        padding: 30px;
+        font-size: $fz-xs;
+        line-height: normal;
+
+        @include mq-down(sm){
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+
+    &__header {
+        margin-bottom: 9px;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 73%;
+        left: 81%;
+
+        @include mq-down() {
+            top: 60%;
+            left: 60%;
+        }
+    }
+}
+
+//---  ストーリーシングルページ   ---//
+
+.story-bg {
+    background-color: #000;
+
+    .story-single {
+        position: relative;
+        color: $cr-white;
+        height: auto;
+        padding: 60px 16px;
+
+        &__inner {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 810px;
+            height: inherit;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        &__title {
+            padding-bottom: 30px;
+
+            @include mq-down(sm) {
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &__date {
+
+            @include mq-down(sm) {
+                img {
+                    width: 60%;
+                    margin: 0 69px;
+                }
+            }
+        }
+
+        &__btn {
+            position: absolute;
+            top: 80%;
+            left: 80%;
+
+            @include mq-down(sm) {
+                top: 110%;
+                left: 28%;
+            }
+        }
+
+        .story-header {
+
+            &__inner {
+                position: relative;
+                margin: 0 auto;
+                max-width: 810px;
+                height: inherit;
+                padding: 90px 0;
+            }
+
+            &__title {
+                @include title();
+            }
+
+            &__wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @include mq-down(sm) {
+                    display: block;
+                }
+
+                &--caption {
+                    width: 50%;
+                    margin: 0 auto;
+                    font-family: $ff-ja;
+                    font-size: $fz-xl;
+
+                    @include mq-down(sm) {
+                        width: 100%;
+                        padding: 30px 0;
+                        font-size: $fz-m;
+                    }
+                }
+
+                &--prag {
+                    width: 50%;
+                    margin: 0 auto;
+                    padding: 60px 0;
+                    font-size: $fz-s;
+                    font-weight: 300;
+                    line-height: 144%;
+
+                    @include mq-down(sm) {
+                        width: 100%;
+                        padding: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .story-view {
+        position: relative;
+        color: $cr-white;
+        height: 370px;
+        padding: 60px 12px 0 12px;
+
+        &__inner {
+            max-width: 810px;
+            margin: 0 auto;
+        }
+
+        &__left {
+            width: 50%;
+            float: left;
+            font-size: $fz-s;
+            font-weight: 300;
+            line-height: 144%;
+
+            @include mq-down(sm) {
+                width: 69%;
+                padding: 0;
+                font-size: $fz-xs;
+            }
+        }
+
+        &__right {
+            width: 50%;
+            float: right;
+            font-size: $fz-s;
+            font-weight: 300;
+            line-height: 144%;
+
+            @include mq-down(sm) {
+                width: 69%;
+                padding: 0;
+                font-size: $fz-xs;
+            }
+        }
+    }
+}

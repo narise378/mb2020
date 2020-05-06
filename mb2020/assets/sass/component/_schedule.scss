@@ -1,0 +1,82 @@
+.schedule {
+    padding: 60px 0;
+
+    &__wrap {
+        position: relative;
+        padding: 30px 20px;
+        background-color: rgba(255, 255, 255,0.29);
+    }
+
+    &__title {
+        @include title();
+    }
+
+    &__lists {
+        font-family: $ff-ja;
+        font-size: 20px;
+        padding: 30px;
+
+        @include mq-down(sm) {
+            padding: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px 0;
+
+        @include mq-down(sm) {
+            display: block;
+            text-align: center;
+        }
+
+        &--time {
+            padding-bottom: 3px;
+        }
+
+        &--starting {
+            padding-bottom: 3px;
+        }
+
+        &--location {
+            padding-bottom: 3px;
+        }
+
+        &--ticket {
+            :hover {
+                opacity: 0.6;
+                transition: all 0.3s ease 0s;
+            }
+
+            a {
+                color: $cr-gray;
+                border-bottom: 1px solid $cr-gray;
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+
+        @include mq-down(sm) {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .ticketinfo-btn {
+            margin-left: 30px;
+
+            @include mq-down(sm) {
+                margin: 0;
+                padding-top: 30px;
+            }
+        }
+    }
+}

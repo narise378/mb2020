@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mb2020</title>
+
+    <!-- フォント -->
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vpa5oxc.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- ドロアメニュー -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+    <link rel="stylesheet" href="/assets/sass/style.css">
+</head>
+<body class="drawer drawer--right">
+    <!-- ヘッダー -->
+    <header class="header">
+        <!-- スマホナビ -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item" href="#">トップ</a></li>
+              <li><a class="drawer-menu-item" href="#">ニュース</a></li>
+              <li><a class="drawer-menu-item" href="#">ストーリー</a></li>
+              <li><a class="drawer-menu-item" href="#">著名人コメント</a></li>
+              <li><a class="drawer-menu-item" href="#">キャスト</a></li>
+              <li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+            </ul>
+        </nav><!--drawer-nav-->
+        <!-- PCナビ -->
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#"><p class="nav-kana">トップ</p>TOP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><p class="nav-kana">ニュース</p>NEWS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><p class="nav-kana">ストーリー</p>STORY</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><p class="nav-kana">著名人コメント</p>COMMENTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><p class="nav-kana">キャスト</p>CAST</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><p class="nav-kana">お問い合わせ</p>INQUIRY</a></li>
+            </ul>
+        </nav><!-- /header-nav -->
+    </header>
+
+    <section class="topview">
+        <div class="archive-inner">
+                <div class="archive-title">
+                    <img src="/assets/img/svg/子ページタイトル.svg" alt="MEIN TITLE">
+                </div>
+                <div class="archive-date">
+                    <img src="/assets/img/svg/2020年7月4日〜7日なかのZERO大ホール.svg" alt="SCHEDULE">
+                </div>
+                <div class="archiveinfo-btn">
+                    <button class="btn archive-btn">チケット予約サイトへ</button>
+                </div>
+        </div><!--archive-inner-->
+    </section><!--topview-->
+
+    <div class="base-inner">
+        <div class="breadcrumb">
+            <div class="bread-home">ホーム ＞ お問い合わせ</div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <section class="inquiry">
+            <div class="base-inner">
+                <h2 class="inquiry-title">INQUIRY</h2>
+                <div class="inquiry-wrap">
+                    <h4 class="inquiry-message">
+                        小池博史ブリッジプロジェクトにご興味を持っていただきまして、ありがとうございます。
+                        公演に関するお問い合わせ、公演・ワークショップのご依頼など、<br>
+                        お電話（03-3385-2066）か、下記フォームよりお気軽にお問い合わせください。
+                    </h4>
+
+                    <div class="contact">
+                        <div class="contact-item">
+                            <label class="contact-itemTitle">名前</label>
+                            <div class="contact-itemInput">
+                                <input type="text" value="">
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <label class="contact-itemTitle">電話</label>
+                            <div class="contact-itemInput">
+                                <input type="tel" value="">
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <label class="contact-itemTitle">メールアドレス</label>
+                            <div class="contact-itemInput">
+                                <input type="email" value="">
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <label class="contact-itemTitle">内容</label>
+                            <div class="contact-itemInput">
+                                <textarea name="text" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="contactsubmit-btn">
+                            <input type="submit" class="btn contact-btnSubmit" value="送信">
+                        </div>
+                    </div><!--contact-->
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="base-inner">
+                <div class="schedule-wrap">
+                    <h2 class="schedule-title">SCHEDULE</h2>
+                    <ul class="schedule-list">
+                        <li>
+                            <div class="schedule-listTime">2020.03.25</div>
+                            <div class="schedule-listStarting">17:00開演</div>
+                            <div class="schedule-listLocation">中野ZERO大ホール</div>
+                            <div class="schedule-listTicket">
+                                <a href="">チケット予約受付中</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="schedule-listTime">2020.03.25</div>
+                            <div class="schedule-listStarting">17:00開演</div>
+                            <div class="schedule-listLocation">中野ZERO大ホール</div>
+                            <div class="schedule-listTicket">
+                                <a href="">チケット予約受付中</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="schedule-listTime">2020.03.25</div>
+                            <div class="schedule-listStarting">17:00開演</div>
+                            <div class="schedule-listLocation">中野ZERO大ホール</div>
+                            <div class="schedule-listTicket">
+                                <a href="">チケット予約受付中</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="schedule-listTime">2020.03.25</div>
+                            <div class="schedule-listStarting">17:00開演</div>
+                            <div class="schedule-listLocation">中野ZERO大ホール</div>
+                            <div class="schedule-listTicket">
+                                <a href="">チケット予約受付中</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--intro-wrap-->
+            </div><!--base-inner-->
+
+            <div class="btns">
+                <div class="contactinfo-btn">
+                    <button class="btn contact-btn">お問い合わせ</button>
+                </div>
+                <div class="ticketinfo-btn">
+                    <button class="btn ticket-btn">チケット予約はこちら！</button>
+                </div>
+            </div>
+        </section><!--schedule-->
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>Copyright &copy; 2019 完全版マハーバーラタ All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

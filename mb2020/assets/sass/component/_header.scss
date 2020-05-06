@@ -1,0 +1,110 @@
+.header {
+    height: 85px;
+    z-index: 20;
+
+    @include mq-down() {
+        display: none;
+    }
+
+
+    .drawer-hamburger {
+        position: fixed;
+        width: 39px;
+        height: 8px;
+        margin: 8px;
+
+        @include mq-up() {
+            display: none;
+        }
+    }
+
+
+    .drawer-nav {
+        background: rgba($color: #ebde70, $alpha: 0.9);
+
+        .drawer-menu {
+            margin: 30px;
+            padding: 0 0 0 10px;
+            list-style: none;
+
+            .drawer-menu-item {
+                color: $cr-gray;
+            }
+
+            // .drawer-brand { ロゴが必要であれば使用
+
+            //     padding: 0;
+
+            //     img {
+            //         width: 83px;
+            //         height: 60px;
+            //     }
+            // }
+
+            .drawer-menu-item {
+                font-size: 1.38rem;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        @include mq-down() {
+            display: none;
+        }
+
+        .nav-list {
+            display: flex;
+
+            &__item {
+                margin-left: 36px;
+
+            }
+
+            &__link {
+                padding: 10px 0;
+                color: $cr-brown;
+                font-family: $ff-en;
+                font-size: $fz-l;
+                font-weight: 600;
+                letter-spacing: -.025em;
+                position: relative;
+
+                &:after {
+                    background: $cr-brown;
+                    bottom: 0;
+                    content: '';
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: -webkit-transform .2s;
+                    transition: -webkit-transform .2s;
+                    transition: transform .2s;
+                    transition: transform .2s, -webkit-transform .2s;
+                    width: 100%;
+                }
+
+                &:hover::after {
+                    transform: scale(1);
+                }
+
+                &--kana {
+                    font-size: $fz-xs;
+                    text-align: center;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}

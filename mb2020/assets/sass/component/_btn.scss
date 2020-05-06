@@ -1,0 +1,121 @@
+// ボタンカラー
+$btn-background-color: $cr-red;
+$btn-border-color: $cr-red;
+$btn-font-color: $cr-white;
+
+// ボタンサイズ
+$btn-width: 200px;
+$btn-height: 62px;
+$btn-border-width: 1px;
+$btn-border-radius: 1px;
+$btn-font-size: 14px;
+$btn-font-wight: 600;
+$btn-letter-spacing: 0.04em;
+
+
+.btn {
+    display: inline-block;
+	vertical-align: middle;
+	width: $btn-width;
+	max-width: 100%;
+	border: 2px solid $btn-border-color;
+	color: $btn-font-color;
+	letter-spacing: $btn-letter-spacing;
+	font-weight: $btn-font-wight;
+	line-height: ($btn-height - $btn-border-width * 2);
+	height: $btn-height;
+	margin: 0;
+	background-image: none;
+	background-color: $btn-background-color;
+	text-decoration: none;
+	border-radius: $btn-border-radius;
+	font-size: $btn-font-size;
+	text-align: center;
+	position: relative;
+	transition: all 0.3s ease 0s;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+
+	&:hover,
+	&:focus {
+		outline: none;
+		border-bottom-color: transparent;
+  		transform: translateY(-0.1875em);
+	}
+
+	&::-moz-foucus-inner {
+		padding: 0;
+		border: none;
+    }
+
+    &.btn-sm {
+        width: 120px;
+		height: 40px;
+		line-height: 36px;
+    }
+
+
+    &.btn-md {
+        font-size: $fz-xs;
+	 	width: 150px;
+	 	height: 40px;
+	 	line-height: 36px;
+	}
+
+	&.btn-lg {
+        font-size: $fz-s;
+	 	width: 200px;
+	 	height: 60px;
+	 	line-height: 36px;
+    }
+
+    &.contact-btn {
+		background-color: rgb(85, 51, 12);
+		border: 2px solid rgb(85, 51, 12);
+	}
+
+}
+
+.btn2 {
+    display: inline-block;
+	vertical-align: middle;
+	width: $btn-width;
+	max-width: 100%;
+	border: 2px solid $btn-border-color;
+	color: $btn-font-color;
+	letter-spacing: $btn-letter-spacing;
+	font-weight: $btn-font-wight;
+	line-height: ($btn-height - $btn-border-width * 2);
+	height: $btn-height;
+	margin: 0;
+	background-image: none;
+	background-color: $btn-background-color;
+	text-decoration: none;
+	border-radius: $btn-border-radius;
+	font-size: $btn-font-size;
+	text-align: center;
+	position: relative;
+	transition: all 0.3s ease 0s;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+
+	&.cast-btn {
+		width: 120px;
+		height: 40px;
+		line-height: 36px;
+		background-color: $cr-white;
+		color: $cr-red;
+
+        &:hover,
+        &:focus {
+			outline: none;
+			opacity: 0.6;
+			background-color: $cr-red;
+			color: $cr-white;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.pagenation {
+    margin-top: 12px;
+    text-align: center;
+
+    a {
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        .next {
+            font-size: 10px;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        .prev {
+            font-size: 10px;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .page-numbers {
+        background: #000;
+        border: 1px solid #000;
+        color: #f8e85a;
+        display: inline-block;
+        font-family: $ff-en;
+        font-size: 13px;
+        height: 30px;
+        line-height: 28px;
+        margin-right: 14px;
+        min-width: 30px;
+        text-align: center;
+        text-decoration: none;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.current {
+            background:  rgba(255, 255, 255,0.1);
+            border: 1px solid #000;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}
